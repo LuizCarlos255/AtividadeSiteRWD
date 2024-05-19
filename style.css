@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url('imagens/background.png') repeat;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+
+
+header {
+    background: rgba(244, 244, 244, 0.9);
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    max-width: 150px;
+}
+
+header .header-content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+header h1 {
+    color: #ff6f61;
+}
+
+header h1 span {
+    color: #ff6f61;
+}
+
+
+
+
+nav {
+    background: transparent;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+
+
+main {
+    padding: 20px 0;
+    background: rgba(238, 238, 238, 0.9);
+}
+
+/* Blocos Centrais */
+.responsive-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    color: #fff;
+}
+
+.card p {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff6f61;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Cor dos cards */
+.card.desktop {
+    background: #f96c6c; 
+}
+
+.card.tablet {
+    background: #f6c663; 
+}
+
+.card.mobile {
+    background: #9b70b3; 
+}
+
+/*Rodapé */
+footer {
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 100px 0;
+}
+
+footer .footer-logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Responsividade*/
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .responsive-section {
+        flex-direction: column;
+    }
+    
+    .card {
+        flex: 1 1 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
